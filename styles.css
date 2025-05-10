@@ -141,3 +141,45 @@ table {
     height: 100vh;
     display: block;
 }
+
+.flex-container>.right-container {
+    flex-grow: 1;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.text,
+.form-container {
+    padding: 15px 0;
+}
+
+.right-container>.form-container {
+    background-color: #FFF;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 1px 5px -1px rgb(80, 79, 79);
+}
+
+.form-container>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p,
+h1 {
+    margin-left: 5%;
+}
+
+form>section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 20px;
+}
