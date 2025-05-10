@@ -132,6 +132,16 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    font-family: "Paragraph";
+    src: url(assets/fonts/abhaya-libre/AbhayaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MainTitle";
+    src: url(assets/fonts/lucien-schoenschriftv-cat/Lucian\ Schoenschrift\ CAT.ttf);
+}
+
 
 .flex-container {
     display: flex;
@@ -174,7 +184,18 @@ table {
 
 p,
 h1 {
-    margin-left: 5%;
+    margin-left: 5%
+}
+
+p,
+span {
+    font-family: Paragraph, Arial, Helvetica, sans-serif;
+}
+
+.welcome {
+    font-family: MainTitle, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 form>section {
