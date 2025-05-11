@@ -158,38 +158,28 @@ table {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
-
-}
-
-.text,
-.form-container {
-    padding: 15px 0;
+    justify-content: space-evenly;
 }
 
 .right-container>.form-container {
-    background-color: #FFF;
+
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0 1px 5px -1px rgb(80, 79, 79);
+
 }
 
 .form-container>form {
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
-p,
-h1 {
-    margin-left: 5%
-}
-
-p,
-span {
-    font-family: Paragraph, Arial, Helvetica, sans-serif;
+.text,
+section {
+    padding: 10px 0;
 }
 
 .welcome {
@@ -201,6 +191,35 @@ span {
 form>section {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    gap: 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+form>section:first-child {
+    background-color: #FFF;
+    box-shadow: 0 1px 5px -1px rgb(80, 79, 79);
+    padding: 20px 0;
+}
+
+section:first-child>p {
+    flex: 0 0 30%;
+}
+
+p,
+h1 {
+    margin-left: 5%;
+
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+p,
+span {
+    font-family: Paragraph, Arial, Helvetica, sans-serif;
+}
+
+section>h1 {
+    flex-basis: 100%;
 }
