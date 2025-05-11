@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,15 +149,36 @@ table {
 
 .flex-container {
     display: flex;
+    height: 100vh;
 }
 
-.img-container>img {
-    height: 100vh;
+
+
+.img-container {
+
+    background: no-repeat url(assets/img/isaac-quesada-K0wcSifqL5c-unsplash.jpg);
+    background-size: 120%;
+    background-position: -60px -50px;
+    width: 50%;
+}
+
+.img-container>p {
     display: block;
+    top: 93vh;
+    padding-top: 10px;
+    line-height: 17px;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.531);
+    text-align: center;
+
+}
+
+.img-container>p>a {
+    color: white;
 }
 
 .flex-container>.right-container {
-    flex-grow: 1;
     background-color: #F9FAFB;
     display: flex;
     flex-direction: column;
@@ -205,9 +230,9 @@ section:first-child>p {
     flex: 0 0 30%;
 }
 
-p,
+.right-container p,
 h1 {
-    margin-left: 5%;
+    margin-left: 3%;
 
 }
 
