@@ -139,6 +139,7 @@ table {
 :root {
     --invalid-color: rgb(210, 45, 30);
     --valid-color: #0fc56d;
+    --main-color: #c59d0f;
 }
 
 @font-face {
@@ -179,7 +180,7 @@ table {
 .img-container>.logo-container {
     background-color: rgba(0, 0, 0, 0.69);
     width: 100%;
-    height: 40%;
+    height: 42%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +188,8 @@ table {
 
 .img-container>.logo-container>.logo-top {
     background: no-repeat url(assets/logo/odin-lined.png);
-    background-size: 85%;
+    background-size: 78%;
+    background-position: 18px 0;
     height: 45%;
     width: 25%;
 }
@@ -294,6 +296,13 @@ input {
     border: 2px solid #d1cfcf;
 }
 
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="password"]:hover {
+    border-color: rgb(17, 17, 17);
+}
+
 
 input[type="text"]:valid,
 input[type="email"]:valid,
@@ -325,4 +334,10 @@ section input[type="submit"] {
     border-color: #c59d0f;
     height: 2rem;
     width: 11rem;
+}
+
+section input[type="submit"]:hover {
+    background-color: #fff;
+    color: var(--main-color);
+
 }
