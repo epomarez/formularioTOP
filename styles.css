@@ -179,7 +179,7 @@ table {
 }
 
 .flex-container>.right-container {
-    background-color: #F9FAFB;
+    background-color: #dedede;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -188,7 +188,7 @@ table {
 
 .right-container>.form-container {
 
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -211,7 +211,10 @@ section {
     font-family: MainTitle, Arial, Helvetica, sans-serif;
     font-size: 50px;
     margin-bottom: 10px;
+    color: #c59d0f;
 }
+
+
 
 form>section {
     display: flex;
@@ -221,7 +224,7 @@ form>section {
 }
 
 form>section:first-child {
-    background-color: #FFF;
+    background-color: #f3f2f2;
     box-shadow: 0 1px 5px -1px rgb(80, 79, 79);
     padding: 20px 0;
 }
@@ -236,6 +239,7 @@ h1 {
 
 }
 
+
 form p {
     margin-bottom: 5px;
 }
@@ -247,4 +251,12 @@ span {
 
 section>h1 {
     flex-basis: 100%;
+}
+
+section input[type="submit"] {
+    background-color: #c59d0f;
+    color: #fff;
+    border-radius: 5px;
+    height: 2rem;
+    width: 11rem;
 }
