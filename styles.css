@@ -136,6 +136,11 @@ table {
     border-spacing: 0;
 }
 
+:root {
+    --invalid-color: rgb(210, 45, 30);
+    --valid-color: #0fc56d;
+}
+
 @font-face {
     font-family: "Paragraph";
     src: url(assets/fonts/abhaya-libre/AbhayaLibre-Regular.ttf);
@@ -146,6 +151,10 @@ table {
     src: url(assets/fonts/lucien-schoenschriftv-cat/Lucian\ Schoenschrift\ CAT.ttf);
 }
 
+@font-face {
+    font-family: "FillForm";
+    src: url(assets/fonts/enriqueta/Enriqueta-Regular.otf) format("opentype")
+}
 
 .flex-container {
     display: flex;
@@ -253,10 +262,41 @@ section>h1 {
     flex-basis: 100%;
 }
 
+
+input {
+    font-family: FillForm;
+    border: 2px solid #d1cfcf;
+}
+
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid {
+    border-color: var(--valid-color);
+}
+
+input[type="text"]:focus:valid,
+input[type="email"]:focus:valid,
+input[type="tel"]:focus:valid,
+input[type="password"]:focus:valid {
+    border-color: var(--valid-color);
+    outline: var(--valid-color);
+}
+
+input[type="text"]:focus:invalid,
+input[type="email"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    border-color: var(--invalid-color);
+    outline: var(--invalid-color);
+}
+
 section input[type="submit"] {
     background-color: #c59d0f;
     color: #fff;
     border-radius: 5px;
+    border-color: #c59d0f;
     height: 2rem;
     width: 11rem;
 }
